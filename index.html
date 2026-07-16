@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adhira - AI-powered Women's Health & PCOS Management. A privacy-first app designed by student developers to make women's healthcare affordable, accessible, and personalized.">
+  <title>Adhira | AI-powered Women's Health & PCOS Management</title>
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/logo.jpeg" alt="Adhira Logo" class="logo-img">
+        <span class="logo-text">Adhira</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#why-adhira" class="nav-link">Why Adhira</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#privacy" class="nav-link">Privacy</a></li>
+        <li><a href="#beta-testing" class="nav-link">Beta Testing</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#feedback" class="nav-link">Feedback</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#beta-testing" class="nav-btn">Try Beta</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="badge">Currently in Beta</div>
+        <h1 class="hero-title">Adhira</h1>
+        <h2 class="hero-subtitle">AI-powered Women's Health &amp; PCOS Management</h2>
+        <p class="hero-description">
+          Built by student developers to make women's healthcare more affordable, accessible, and personalized.
+        </p>
+        <div class="hero-actions">
+          <a href="#beta-testing" class="btn btn-primary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,22C14.32,22.05 13.89,21.24 12.37,21.24C10.84,21.24 10.37,22 9.09,22.05C7.79,22.1 6.8,20.77 5.96,19.5C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.1,16.67C20.08,16.74 19.67,18.11 18.71,19.5M15.97,4.17C16.63,3.37 17.07,2.28 16.95,1C16,1.04 14.9,1.6 14.24,2.38C13.68,3.04 13.19,4.14 13.34,5.39C14.39,5.47 15.4,4.88 15.97,4.17Z"/></svg>
+            Try on iPhone/iPad
+          </a>
+          <a href="#beta-testing" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6,5.26L18.4,2.16a.48.48,0,0,0-.17-.66.49.49,0,0,0-.66.17L15.71,4.85a15.82,15.82,0,0,0-7.42,0L6.43,1.67a.49.49,0,0,0-.66-.17.48.48,0,0,0-.17.66L7.4,5.26A11.75,11.75,0,0,0,2,15.11H22A11.75,11.75,0,0,0,16.6,5.26M7,11a1.25,1.25,0,1,1,1.25-1.25A1.25,1.25,0,0,1,7,11m10,0a1.25,1.25,0,1,1,1.25-1.25A1.25,1.25,0,0,1,17,11Z"/></svg>
+            Try on Android
+          </a>
+          <a href="#feedback" class="btn btn-outline">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            Give Feedback
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="phone-mockup-wrapper">
+          <!-- iPhone CSS Mockup -->
+          <div class="iphone-device">
+            <div class="dynamic-island"></div>
+            <div class="iphone-screen">
+              <div class="phone-slides">
+                <img src="assets/onboarding.jpeg" alt="Adhira Onboarding Screen" class="phone-slide-img active" id="slide-onboarding">
+                <img src="assets/dashboard.jpeg" alt="Adhira Dashboard Screen" class="phone-slide-img" id="slide-dashboard">
+                <img src="assets/diet_main.jpeg" alt="Adhira Diet Screen" class="phone-slide-img" id="slide-diet">
+                <img src="assets/workout_main.jpeg" alt="Adhira Workout Screen" class="phone-slide-img" id="slide-workout">
+                <img src="assets/cycle_trends.jpeg" alt="Adhira Cycle Trends Screen" class="phone-slide-img" id="slide-trends">
+              </div>
+            </div>
+            <div class="iphone-home-indicator"></div>
+          </div>
+          
+          <!-- Mockup Navigation controls -->
+          <div class="phone-controls">
+            <button class="phone-control-btn active" data-slide="onboarding" aria-label="Onboarding View">
+              <span class="control-dot"></span> Onboarding
+            </button>
+            <button class="phone-control-btn" data-slide="dashboard" aria-label="Dashboard View">
+              <span class="control-dot"></span> Home
+            </button>
+            <button class="phone-control-btn" data-slide="diet" aria-label="Diet View">
+              <span class="control-dot"></span> Nutrition
+            </button>
+            <button class="phone-control-btn" data-slide="workout" aria-label="Workout View">
+              <span class="control-dot"></span> Exercise
+            </button>
+            <button class="phone-control-btn" data-slide="trends" aria-label="Trends View">
+              <span class="control-dot"></span> Trends
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Why We Built Adhira Section -->
+  <section class="section section-why" id="why-adhira">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title-tag">Our Mission</h2>
+        <h3 class="section-heading">Why We Built Adhira</h3>
+      </div>
+      
+      <div class="why-grid">
+        <div class="why-story">
+          <p class="story-lead">
+            PCOS affects millions of women worldwide, yet managing it often means juggling multiple apps, conflicting advice, and having little understanding of how daily habits affect symptoms.
+          </p>
+          <p class="story-body">
+            As a team of student developers, we wanted to build something different. We designed Adhira to help users understand the deep connection between their daily routines and hormonal health.
+          </p>
+          <div class="mission-quote">
+            <blockquote>
+              "Our mission is simple: Make women's healthcare more accessible, more understandable, and more affordable."
+            </blockquote>
+          </div>
+        </div>
+        
+        <div class="why-connections-card">
+          <h4 class="card-inner-title">Adhira helps you connect the dots between:</h4>
+          <ul class="connection-list">
+            <li>
+              <span class="icon-wrapper font-icon">🥗</span>
+              <div class="connection-content">
+                <h5>Nutrition &amp; Food</h5>
+                <p>Tracking meals and GI index to stabilize blood sugar.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-wrapper font-icon">💪</span>
+              <div class="connection-content">
+                <h5>Exercise &amp; Movement</h5>
+                <p>Selecting routines that align with your current energy levels.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-wrapper font-icon">💤</span>
+              <div class="connection-content">
+                <h5>Sleep &amp; Recovery</h5>
+                <p>Monitoring resting patterns and fatigue correlation.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-wrapper font-icon">🌸</span>
+              <div class="connection-content">
+                <h5>Symptoms &amp; Pain</h5>
+                <p>Logging cramps, acne, and bloating to note trends.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-wrapper font-icon">📅</span>
+              <div class="connection-content">
+                <h5>Menstrual Cycle Phases</h5>
+                <p>Adapting daily habits dynamically based on your cycle day.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Can Use It Section -->
+  <section class="section section-who" id="who-can-use">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title-tag">Inclusive Healthcare</h2>
+        <h3 class="section-heading">Adhira isn't only for PCOS</h3>
+        <p class="section-subheading">
+          We welcome feedback from women, intersex people, and anyone who menstruates or experiences hormone-related health concerns. Even if you don't have PCOS, your feedback helps us build a better product for everyone.
+        </p>
+      </div>
+
+      <div class="who-grid">
+        <div class="who-card">
+          <div class="who-icon">✔</div>
+          <h4>Have PCOS</h4>
+          <p>Get personalized logs and tailored cycle/nutrition tips specifically for managing PCOS symptoms.</p>
+        </div>
+        <div class="who-card">
+          <div class="who-icon">✔</div>
+          <h4>Suspect PCOS</h4>
+          <p>Track your symptoms and trends to gather clear data you can share with healthcare professionals.</p>
+        </div>
+        <div class="who-card">
+          <div class="who-icon">✔</div>
+          <h4>Track Menstrual Cycle</h4>
+          <p>Understand your cycle phases—Menstrual, Follicular, Ovulation, Luteal—and adapt your routines.</p>
+        </div>
+        <div class="who-card">
+          <div class="who-icon">✔</div>
+          <h4>Build Healthy Habits</h4>
+          <p>Form sustainable daily habits around nutrition, targeted exercises, and consistent sleep hygiene.</p>
+        </div>
+        <div class="who-card">
+          <div class="who-icon">✔</div>
+          <h4>Help Us Improve</h4>
+          <p>Join as a beta tester and help shape a free health platform designed to benefit everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section section-features" id="features">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title-tag">App Features</h2>
+        <h3 class="section-heading">Designed for Your Hormonal Health</h3>
+        <p class="section-subheading">Instead of simply recording data, Adhira helps you discover patterns and build healthier habits over time.</p>
+      </div>
+
+      <!-- Feature Card 1 -->
+      <div class="feature-row reverse">
+        <div class="feature-info">
+          <div class="feature-icon-badge">🥗 Nutrition</div>
+          <h4 class="feature-title">Smart Nutrition Tracking</h4>
+          <p class="feature-description">
+            Managing insulin resistance is key for PCOS health. Adhira makes diet logging effortless. Scan barcodes, take pictures of your food, or simply describe your meals to our AI to extract caloric details and macro counts instantly.
+          </p>
+          <ul class="feature-bullets">
+            <li>Scan barcodes for instant logging</li>
+            <li>Describe meals naturally to our AI Assistant</li>
+            <li>Take a picture of food to identify and log</li>
+            <li>Track daily calories, macros (Protein, Carbs, Fats)</li>
+            <li>Personalized meal recommendations (e.g. High Protein, Low GI)</li>
+          </ul>
+        </div>
+        <div class="feature-visual-card">
+          <div class="image-showcase">
+            <img src="assets/diet_main.jpeg" alt="Diet Suggestions Screen" class="showcase-img img-main">
+            <img src="assets/diet_confirm.jpeg" alt="Confirm Meal Screen" class="showcase-img img-secondary">
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Card 2 -->
+      <div class="feature-row">
+        <div class="feature-visual-card">
+          <div class="image-showcase single">
+            <img src="assets/dashboard.jpeg" alt="Symptom tracking on main dashboard" class="showcase-img img-center">
+          </div>
+        </div>
+        <div class="feature-info">
+          <div class="feature-icon-badge">🌸 Symptoms</div>
+          <h4 class="feature-title">Intuitive Symptom Tracking</h4>
+          <p class="feature-description">
+            Your body signals changes every day. Log your symptoms with just a tap on your dashboard and view clear breakdowns categorizing skin, hair, mood, and physical symptoms.
+          </p>
+          <ul class="feature-bullets">
+            <li>Track cramps, acne, bloating, mood swings, and fatigue</li>
+            <li>Log sleep duration and quality in relation to daily fatigue</li>
+            <li>Track cycle days and get predictions on period onset</li>
+            <li>Log period logs and view menstrual patterns</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature Card 3 -->
+      <div class="feature-row reverse">
+        <div class="feature-info">
+          <div class="feature-icon-badge">🤖 AI Intelligence</div>
+          <h4 class="feature-title">AI Health Assistant</h4>
+          <p class="feature-description">
+            Get personalized insights by speaking naturally with your AI companion. Ask questions about your symptoms, meals, or cycle, and receive answers trained on your own local health logs.
+          </p>
+          
+          <!-- Interactive Chat Widget -->
+          <div class="chat-widget">
+            <div class="chat-header">
+              <span class="chat-dot"></span>
+              <span class="chat-name">Adhira AI Assistant</span>
+            </div>
+            <div class="chat-body" id="chat-body">
+              <div class="chat-msg bot">
+                Hello! I'm here to help analyze your logs today. What would you like to know?
+              </div>
+            </div>
+            <div class="chat-footer">
+              <div class="chat-suggestions">
+                <button class="chat-suggest-btn" data-q="Why am I feeling tired today?">"Why am I feeling tired today?"</button>
+                <button class="chat-suggest-btn" data-q="What should I eat tonight?">"What should I eat tonight?"</button>
+                <button class="chat-suggest-btn" data-q="Why are my cramps worse this cycle?">"Why are my cramps worse?"</button>
+              </div>
+            </div>
+          </div>
+          <p class="chat-note">The AI personalizes answers using your own logs while keeping your health data private.</p>
+        </div>
+        <div class="feature-visual-card bg-decor">
+          <div class="app-icon-display">
+            <img src="assets/logo.jpeg" alt="Adhira Logo" class="floating-logo">
+            <div class="sparkle s1">✦</div>
+            <div class="sparkle s2">✦</div>
+            <div class="sparkle s3">✦</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Card 4 -->
+      <div class="feature-row">
+        <div class="feature-visual-card">
+          <div class="image-showcase">
+            <img src="assets/workout_main.jpeg" alt="Workout suggestions page" class="showcase-img img-main">
+            <img src="assets/workout_active.jpeg" alt="Workout active details" class="showcase-img img-secondary">
+          </div>
+        </div>
+        <div class="feature-info">
+          <div class="feature-icon-badge">💪 Fitness</div>
+          <h4 class="feature-title">Workout Recommendations</h4>
+          <p class="feature-description">
+            Exercise should support your body, not exhaust it. Adhira recommends customized routines based on your current menstrual cycle phase and active symptom tags.
+          </p>
+          <ul class="feature-bullets">
+            <li>Tailored routines for Yoga, Cardio, Strength, and Mobility</li>
+            <li>Recommended routines based on cycle phase (e.g. Restorative stretches during period)</li>
+            <li>Interactive workout active screen with reps, pacing, and timers</li>
+            <li>Custom routine creation and exercise catalog</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature Card 5 -->
+      <div class="feature-row reverse">
+        <div class="feature-info">
+          <div class="feature-icon-badge">📈 Analytics</div>
+          <h4 class="feature-title">Smart Pattern Detection</h4>
+          <p class="feature-description">
+            Adhira compiles your nutrition, sleep, exercise, symptoms, and menstrual cycle records to analyze and detect correlations that help you better understand your body's behavior.
+          </p>
+          <div class="flow-connection">
+            <span class="flow-step">Food Logs</span>
+            <span class="flow-arrow">➔</span>
+            <span class="flow-step">Sleep</span>
+            <span class="flow-arrow">➔</span>
+            <span class="flow-step">Exercise</span>
+            <span class="flow-arrow">➔</span>
+            <span class="flow-step">Symptoms</span>
+            <span class="flow-arrow">➔</span>
+            <span class="flow-step">Cycle Phases</span>
+          </div>
+        </div>
+        <div class="feature-visual-card">
+          <div class="image-showcase">
+            <img src="assets/cycle_trends.jpeg" alt="Cycle Trends Graph" class="showcase-img img-main">
+            <img src="assets/symptom_patterns.jpeg" alt="Symptom Timeline" class="showcase-img img-secondary">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Privacy Section -->
+  <section class="section section-privacy" id="privacy">
+    <div class="container">
+      <div class="privacy-container-card">
+        <div class="privacy-icon-container">
+          <svg class="privacy-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </div>
+        <h2 class="privacy-badge">Privacy First</h2>
+        <h3 class="privacy-heading">Your data belongs to you.</h3>
+        <p class="privacy-description">
+          Health information is deeply personal. That's why privacy is one of Adhira's core principles. We are building Adhira with a privacy-first approach, keeping as much processing as possible on-device so your health information stays under your control.
+        </p>
+        <div class="privacy-promises">
+          <div class="promise-item">
+            <div class="promise-dot"></div>
+            <span><strong>On-device processing:</strong> Minimizing server uploads for absolute confidentiality.</span>
+          </div>
+          <div class="promise-item">
+            <div class="promise-dot"></div>
+            <span><strong>No data commercialization:</strong> We never sell your health data.</span>
+          </div>
+          <div class="promise-item">
+            <div class="promise-dot"></div>
+            <span><strong>Secure design:</strong> Building features using modern encryption best practices.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beta Testing Section -->
+  <section class="section section-beta" id="beta-testing">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title-tag">Join Our Beta</h2>
+        <h3 class="section-heading">Install Adhira</h3>
+        <p class="section-subheading">Try out the app on your device today. Since we are in active beta, downloading is simple using official testing channels.</p>
+      </div>
+
+      <div class="beta-grid">
+        <!-- iOS Beta -->
+        <div class="beta-card">
+          <div class="beta-brand-header">
+            <svg class="beta-brand-icon ios" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,22C14.32,22.05 13.89,21.24 12.37,21.24C10.84,21.24 10.37,22 9.09,22.05C7.79,22.1 6.8,20.77 5.96,19.5C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.1,16.67C20.08,16.74 19.67,18.11 18.71,19.5M15.97,4.17C16.63,3.37 17.07,2.28 16.95,1C16,1.04 14.9,1.6 14.24,2.38C13.68,3.04 13.19,4.14 13.34,5.39C14.39,5.47 15.4,4.88 15.97,4.17Z"/></svg>
+            <div class="beta-brand-meta">
+              <h4>iPhone &amp; iPad</h4>
+              <span class="version-tag">Beta (TestFlight)</span>
+            </div>
+          </div>
+          <div class="beta-steps">
+            <div class="step">
+              <span class="step-num">1</span>
+              <div class="step-desc">
+                <p>Download Apple's official <strong>TestFlight</strong> app from the App Store.</p>
+                <a href="https://apps.apple.com/app/testflight/id899247664" target="_blank" rel="noopener" class="btn-text">
+                  Download TestFlight
+                  <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">2</span>
+              <div class="step-desc">
+                <p>Open our public beta invitation link on your iOS device.</p>
+                <a href="https://testflight.apple.com/join/placeholder" target="_blank" rel="noopener" class="btn btn-primary btn-sm btn-wide">
+                  Join TestFlight Beta
+                </a>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">3</span>
+              <div class="step-desc">
+                <p>Tap <strong>Accept</strong> within the TestFlight application.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">4</span>
+              <div class="step-desc">
+                <p>Tap <strong>Install</strong> to download Adhira to your device. You are ready to go!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Android Beta -->
+        <div class="beta-card">
+          <div class="beta-brand-header">
+            <svg class="beta-brand-icon android" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6,5.26L18.4,2.16a.48.48,0,0,0-.17-.66.49.49,0,0,0-.66.17L15.71,4.85a15.82,15.82,0,0,0-7.42,0L6.43,1.67a.49.49,0,0,0-.66-.17.48.48,0,0,0-.17.66L7.4,5.26A11.75,11.75,0,0,0,2,15.11H22A11.75,11.75,0,0,0,16.6,5.26M7,11a1.25,1.25,0,1,1,1.25-1.25A1.25,1.25,0,0,1,7,11m10,0a1.25,1.25,0,1,1,1.25-1.25A1.25,1.25,0,0,1,17,11Z"/></svg>
+            <div class="beta-brand-meta">
+              <h4>Android</h4>
+              <span class="version-tag">Beta (Firebase App Distribution)</span>
+            </div>
+          </div>
+          <div class="beta-steps">
+            <div class="step">
+              <span class="step-num">1</span>
+              <div class="step-desc">
+                <p>Register using our Firebase App Distribution testing signup link.</p>
+                <a href="https://appdistribution.firebase.google.com/join/placeholder" target="_blank" rel="noopener" class="btn btn-secondary btn-sm btn-wide">
+                  Register for Android Beta
+                </a>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">2</span>
+              <div class="step-desc">
+                <p>Our student team will approve your email registration shortly.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">3</span>
+              <div class="step-desc">
+                <p>You will receive an invitation email containing the installation link.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">4</span>
+              <div class="step-desc">
+                <p>Install the App Tester app, accept the invite, and download Adhira.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Known Limitations Section -->
+  <section class="section section-limitations" id="limitations">
+    <div class="container">
+      <div class="limitations-card">
+        <h3 class="limitations-title">Known Limitations</h3>
+        <p class="limitations-subtitle">Adhira is still under active development by student builders. Current limitations include:</p>
+        <ul class="limitations-list">
+          <li>
+            <span class="limitation-bullet"></span>
+            <p><strong>Some AI features are experimental:</strong> Conversations are highly localized, and meal suggestions are recommendations that do not substitute for professional medical advice.</p>
+          </li>
+          <li>
+            <span class="limitation-bullet"></span>
+            <p><strong>Cycle prediction improves over time:</strong> Cycle regularity analysis requires logs across multiple months to adjust to your body's specific baseline.</p>
+          </li>
+          <li>
+            <span class="limitation-bullet"></span>
+            <p><strong>Wearable integrations are expanding:</strong> Fitness tracking relies primarily on manual logs or local mobile health APIs; deeper Apple Health / Google Fit sync options are in progress.</p>
+          </li>
+          <li>
+            <span class="limitation-bullet"></span>
+            <p><strong>Symptom analysis is growing:</strong> Advanced symptom-to-lifestyle correlation matrices will grow more detailed in upcoming app patches.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-faq" id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title-tag">Got Questions?</h2>
+        <h3 class="section-heading">Frequently Asked Questions</h3>
+      </div>
+
+      <div class="faq-accordion-container">
+        <!-- Q1 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is Adhira free?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Adhira is created as a student project and is completely free during testing. Our goal is to make healthcare tools accessible to everyone.</p>
+          </div>
+        </div>
+        
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do I need to have PCOS to use the app?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No. Anyone interested in tracking their menstrual cycle, observing hormonal health patterns, or building healthier exercise and diet habits is welcome to test Adhira. Your feedback helps us improve.</p>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is my health data safe?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. We follow a privacy-first engineering model, striving to compute health metrics locally on your phone. We never sell your personal or medical logs to advertisers or third parties.</p>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I use Adhira on iPad?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. The iOS beta is compatible with both iPhones and iPads via Apple's TestFlight.</p>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Will Android be available?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, Android beta testing is actively underway! You can sign up using the Firebase registration link to receive an installation invite once approved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section class="section section-feedback" id="feedback">
+    <div class="container text-center">
+      <div class="feedback-card">
+        <h2 class="feedback-emoji">❤️</h2>
+        <h3 class="feedback-title">We'd Love Your Feedback</h3>
+        <p class="feedback-subtitle">
+          After trying Adhira, we'd appreciate if you could answer a few questions:
+        </p>
+        <ul class="feedback-questions">
+          <li>Was the app easy to understand and navigate?</li>
+          <li>Which specific feature did you find most useful?</li>
+          <li>Was any part of the tracking setup confusing?</li>
+          <li>Did the exercise and meal recommendations feel helpful?</li>
+          <li>Did you encounter any bugs, crashes, or glitches?</li>
+        </ul>
+        <a href="https://forms.google.com/placeholder" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          Submit Feedback (Google Forms)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section section-team" id="team">
+    <div class="container text-center">
+      <div class="team-container">
+        <h3 class="team-title">Meet the Team</h3>
+        <p class="team-description">
+          Adhira is being built by a team of student developers who believe healthcare technology should be accessible to everyone—not only those who can afford expensive consultations or subscriptions. We're continuously learning from our users and updating the app based on real feedback.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Socials Section -->
+  <section class="section section-contact" id="contact">
+    <div class="container text-center">
+      <h3 class="contact-title">Connect with Us</h3>
+      <p class="contact-subtitle">Have questions or want to collaborate? Reach out to our student dev team!</p>
+      <div class="contact-links">
+        <a href="mailto:team@adhira.health" class="contact-item">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Email
+        </a>
+        <a href="https://instagram.com/adhira.health" target="_blank" rel="noopener" class="contact-item">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          Instagram
+        </a>
+        <a href="https://github.com/placeholder" target="_blank" rel="noopener" class="contact-item">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/company/placeholder" target="_blank" rel="noopener" class="contact-item">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="footer-logo">
+        <img src="assets/logo.jpeg" alt="Adhira Logo" class="footer-logo-img">
+        <span>Adhira</span>
+      </div>
+      <p class="footer-tagline">Built with ❤️ by student developers. Currently in Beta.</p>
+      <p class="footer-sub">Made for learning, research, and improving women's health.</p>
+      <p class="footer-copyright">&copy; 2026 Adhira Project. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="index.js"></script>
+</body>
+</html>
