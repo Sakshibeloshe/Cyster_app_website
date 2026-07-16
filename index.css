@@ -2,6 +2,7 @@
 
 /* Design Tokens & Variables */
 :root {
+  color-scheme: only light;
   --primary: #FF6B8B;
   --primary-hover: #E05275;
   --primary-light: #FFF0F2;
@@ -704,15 +705,15 @@ a {
 
 .who-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-  margin-top: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 36px;
 }
 
 .who-card {
   background-color: var(--white);
   border-radius: var(--border-radius-md);
-  padding: 32px 24px;
+  padding: 20px 16px;
   text-align: center;
   border: 1px solid rgba(255, 107, 139, 0.05);
   box-shadow: var(--shadow-sm);
@@ -720,35 +721,35 @@ a {
 }
 
 .who-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(255, 107, 139, 0.2);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(255, 107, 139, 0.15);
 }
 
 .who-icon {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   background-color: var(--primary-light);
   color: var(--primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 12px auto;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: 1px solid rgba(255, 107, 139, 0.15);
 }
 
 .who-card h4 {
-  font-size: 1.15rem;
-  margin-bottom: 12px;
+  font-size: 1rem;
+  margin-bottom: 8px;
   color: var(--text-dark);
 }
 
 .who-card p {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.825rem;
+  line-height: 1.4;
 }
 
 /* Section Features layout */
@@ -1653,8 +1654,24 @@ a {
   .hero-subtitle {
     font-size: 1.35rem;
   }
-  .hero-actions .btn {
+  .hero-actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
     width: 100%;
+    justify-content: center;
+  }
+  .hero-actions .btn {
+    flex: 1 1 calc(50% - 4px);
+    padding: 12px 8px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    border-radius: var(--border-radius-sm);
+  }
+  .hero-actions .btn-outline {
+    flex: 1 1 100%;
+    margin-top: 4px;
   }
   .iphone-device {
     width: 270px;
