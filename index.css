@@ -31,6 +31,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* Prevent Samsung Internet / browser forced dark-mode from recolouring elements */
+  forced-color-adjust: none;
 }
 
 html {
@@ -38,6 +40,8 @@ html {
   font-size: 16px;
   background-color: var(--bg-light);
   color: var(--text-dark);
+  /* Explicitly opt out of dark mode at the HTML level */
+  color-scheme: only light;
 }
 
 body {
@@ -45,6 +49,8 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   padding-top: 80px; /* navbar spacing */
+  background-color: #FFF7F9;
+  color: #2B1B1E;
 }
 
 /* Scrollbar Styling */
@@ -1690,5 +1696,122 @@ a {
   }
   .feedback-card {
     padding: 40px 20px;
+  }
+}
+
+/* ============================================================
+   SAMSUNG INTERNET / BROWSER FORCED DARK MODE OVERRIDE
+   Samsung Internet ignores color-scheme meta and CSS property.
+   This block explicitly re-applies the light palette when the
+   OS/browser reports dark mode, preventing the reddish tinge.
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: only light;
+  }
+
+  html, body {
+    background-color: #FFF7F9 !important;
+    color: #2B1B1E !important;
+  }
+
+  /* Navigation */
+  .navbar {
+    background: rgba(255, 247, 249, 0.95) !important;
+    border-bottom-color: rgba(255, 107, 139, 0.08) !important;
+  }
+  .nav-menu {
+    background-color: #FFFFFF !important;
+  }
+  .nav-link {
+    color: #7A696C !important;
+  }
+
+  /* Section backgrounds */
+  .section-why,
+  .section-features,
+  .footer {
+    background-color: #FFFFFF !important;
+  }
+  .hero-section,
+  .section-who,
+  .section-feedback,
+  .section-team,
+  .section-faq,
+  .section-privacy,
+  .section-contact {
+    background-color: #FFF7F9 !important;
+  }
+  .section-beta {
+    background-color: #FFF0F2 !important;
+  }
+  .section-limitations {
+    background-color: #FFF7F9 !important;
+  }
+
+  /* Cards */
+  .who-card,
+  .beta-card,
+  .faq-item,
+  .feedback-card,
+  .limitations-card,
+  .why-connections-card,
+  .privacy-container-card {
+    background-color: #FFFFFF !important;
+    color: #2B1B1E !important;
+    border-color: rgba(255, 107, 139, 0.1) !important;
+  }
+
+  /* Text colours */
+  h1, h2, h3, h4, h5, h6,
+  .hero-title, .hero-subtitle,
+  .section-heading, .feature-title,
+  .privacy-heading, .feedback-title,
+  .limitations-title, .team-title,
+  .contact-title, .who-card h4 {
+    color: #2B1B1E !important;
+    -webkit-text-fill-color: unset;
+  }
+
+  /* Gradient text headings need special handling */
+  .hero-title {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #2B1B1E !important;
+  }
+  .logo-text {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #FF6B8B !important;
+  }
+
+  p, .text-muted,
+  .hero-description, .section-subheading,
+  .feature-description, .nav-link {
+    color: #7A696C !important;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    background: linear-gradient(135deg, #FF6B8B 0%, #FF527B 100%) !important;
+    color: #FFFFFF !important;
+  }
+  .btn-secondary {
+    background-color: #FFFFFF !important;
+    color: #2B1B1E !important;
+    border-color: rgba(255, 107, 139, 0.2) !important;
+  }
+  .nav-btn {
+    background-color: #FF6B8B !important;
+    color: #FFFFFF !important;
+  }
+
+  /* Phone mockup */
+  .iphone-device {
+    background-color: #2b1b1e !important;
+    border-color: #2b1b1e !important;
+  }
+  .phone-controls {
+    background: #FFFFFF !important;
   }
 }
